@@ -22,6 +22,15 @@ body {
   color: var(--fc-primary);
 }
 
+.page {
+  max-width: 33rem;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
 header {
   margin: 10rem 0 8rem;
   font-family: var(--ff-heading);
