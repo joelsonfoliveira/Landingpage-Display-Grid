@@ -21,6 +21,7 @@ body {
   font-family: var(--ff-texting);
   background-color: var(--bg-primary);
   color: var(--fc-primary);
+  font-size: var(--fs-body);
 }
 
 .page {
@@ -81,12 +82,11 @@ main {
   position: absolute;
   bottom: 5.2rem;
   left: 2.8rem;
-  font-size: var(--fs-heading);
+  font-size: 4rem;
   font-weight: 800;
   display: flex;
   flex-direction: column;
   gap: 2.8rem;
-
 }
 
 .card h2 span {
@@ -123,5 +123,42 @@ main {
   100% {
     opacity: 1;
     transform: rotateY(0);
+  }
+}
+
+@media (min-width: 930px) {
+  :root {
+    --fs-heading: 5.6rem;
+  }
+
+  .page {
+    max-width: 117rem;
+    padding: 0 5rem;
+  }
+
+  main {
+    /* grid-template-columns: 1fr 1fr; */
+  }
+}
+
+@media (min-width: 930px) {
+  main {
+    grid-template-areas: "A B B" "C C D";
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+
+  main div:nth-child(2) {
+    grid-area: B;
+  }
+
+  main div:nth-child(3) {
+    grid-area: C;
+  }
+
+  main div:nth-child(4) {
+    grid-area: D;
   }
 }
