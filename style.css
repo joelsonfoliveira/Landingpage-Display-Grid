@@ -36,6 +36,7 @@ header {
   margin: 10rem 0 8rem;
   font-family: var(--ff-heading);
   text-align: center;
+  animation: topdown 700ms;
 }
 
 header p {
@@ -56,6 +57,7 @@ header h1 {
 main {
   display: grid;
   gap: 3.2rem;
+  animation: downtop 700ms 350ms backwards;
 }
 
 .card {
@@ -98,14 +100,6 @@ main {
   height: 3.8rem;
   display: inline-flex;
   align-items: center;
-}
-
-header {
-  animation: topdown 700ms;
-}
-
-main {
-  animation: downtop 700ms 350ms backwards;
 }
 
 @keyframes topdown {
