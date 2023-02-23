@@ -71,6 +71,7 @@ main {
   object-fit: cover;
   border-radius: 6px;
   transition: transform 200ms;
+  filter: brightness(0.5);
 }
 
 .card img:hover {
