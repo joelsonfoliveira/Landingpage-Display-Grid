@@ -7,7 +7,6 @@
 :root {
   --ff-heading: 'Epilogue', sans-serif;
   --ff-texting: 'Open sans', sans-serif;
-
   --hue: 250;
   --bg-primary: hsl(var(--hue), 22%, 20%);
   --fc-primary: hsl(var(--hue), 0%, 100%);
@@ -23,10 +22,8 @@
 
 body {
   font-family: var(--ff-texting);
-
   background-color: var(--bg-primary);
   color: var(--fc-primary);
-
   font-size: var(--fs-body);
 }
 
@@ -44,7 +41,6 @@ img {
 header {
   margin: 10rem 0 8rem;
   font-family: var(--ff-heading);
-
   text-align: center;
   animation: topdown 700ms;
 }
@@ -52,12 +48,9 @@ header {
 header p {
   color: var(--fc-secondary);
   text-transform: uppercase;
-
   line-height: 3.2rem;
   letter-spacing: 3px;
-
   font-weight: 400;
-
   margin-bottom: 1.7rem;
 }
 
@@ -70,14 +63,12 @@ header h1 {
 main {
   display: grid;
   gap: 3.2rem;
-
   padding-bottom: 10rem;
   animation: downtop 700ms 350ms backwards;
 }
 
 .card {
   position: relative;
-
   font-family: var(--ff-heading);
 }
 
@@ -85,9 +76,7 @@ main {
   height: 41.6rem;
   object-fit: cover;
   filter: brightness(0.5);
-
   border-radius: 6px;
-
   transition: all 200ms;
 }
 
@@ -100,10 +89,8 @@ main {
   position: absolute;
   bottom: 5.2rem;
   left: 2.8rem;
-
   font-size: var(--fs-heading-sm);
   font-weight: 800;
-
   display: flex;
   flex-direction: column;
   gap: 2.8rem;
@@ -116,14 +103,11 @@ main {
   font-weight: 400;
   color: var(--fc-secondary-dark);
   padding: 0 1.6rem;
-
   width: fit-content;
   height: 3.8rem;
-
   display: inline-flex;
   align-items: center;
 }
-
 
 @keyframes topdown {
   0% {
@@ -149,13 +133,7 @@ main {
   }
 }
 
-
 @media (min-width: 700px) {
-  /* .page {
-    max-width: 117rem;
-    padding: 0 5rem;
-  } */
-
   main {
     grid-template-columns: 1fr 1fr;
   }
